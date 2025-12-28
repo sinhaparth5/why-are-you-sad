@@ -1,51 +1,76 @@
-import Image from "next/image";
-
 export default function Home() {
 	return (
-		<div className="font-sans grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20">
-			<main className="flex flex-col gap-[32px] row-start-2 items-center sm:items-start">
-				<Image className="dark:invert" src="/next.svg" alt="Next.js logo" width={180} height={38} priority />
-				<ol className="font-mono list-inside list-decimal text-sm/6 text-center sm:text-left">
-					<li className="mb-2 tracking-[-.01em]">
-						Get started by editing{" "}
-						<code className="bg-black/[.05] dark:bg-white/[.06] font-mono font-semibold px-1 py-0.5 rounded">
-							src/app/page.tsx
-						</code>
-						.
-					</li>
-					<li className="tracking-[-.01em]">Save and see your changes instantly.</li>
-				</ol>
-
-				<div className="flex gap-4 items-center flex-col sm:flex-row">
-					<a
-						className="rounded-full border border-solid border-black/[.08] dark:border-white/[.145] transition-colors flex items-center justify-center hover:bg-[#f2f2f2] dark:hover:bg-[#1a1a1a] hover:border-transparent font-medium text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 w-full sm:w-auto md:w-[158px]"
-						href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-						target="_blank"
-						rel="noopener noreferrer"
-					>
-						Read our docs
-					</a>
+		<div className="min-h-screen">
+			{/* Header Section - Forest Green Background */}
+			<header className="bg-forest-green text-text-on-dark py-12 px-6">
+				<div className="max-w-6xl mx-auto">
+					<h1 className="font-display text-6xl md:text-8xl font-bold tracking-tight">
+						PORTFOLIO
+					</h1>
+					<p className="font-sans text-lg md:text-xl mt-4 opacity-90">
+						A retro-modern design system
+					</p>
 				</div>
-			</main>
-			<footer className="row-start-3 flex gap-[24px] flex-wrap items-center justify-center">
-				<a
-					className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-					href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-					target="_blank"
-					rel="noopener noreferrer"
-				>
-					<Image aria-hidden src="/file.svg" alt="File icon" width={16} height={16} />
-					Learn
-				</a>
-				<a
-					className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-					href="https://nextjs.org?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-					target="_blank"
-					rel="noopener noreferrer"
-				>
-					<Image aria-hidden src="/globe.svg" alt="Globe icon" width={16} height={16} />
-					Go to nextjs.org →
-				</a>
+			</header>
+
+			{/* Hero Section - Cream Background */}
+			<section className="bg-cream py-20 px-6">
+				<div className="max-w-6xl mx-auto">
+					<h2 className="font-display text-5xl md:text-7xl font-bold text-forest-green mb-6">
+						Hello, I&apos;m Han!
+					</h2>
+					<p className="font-sans text-xl text-text-on-light max-w-2xl leading-relaxed">
+						This is your new SSR website with a sophisticated earth-toned retro-modern color scheme.
+						The design features elegant typography and a warm, professional aesthetic.
+					</p>
+
+					{/* Scroll Down Button - Mustard Yellow */}
+					<button className="mt-8 bg-mustard hover:bg-mustard-dark text-deep-black font-sans font-semibold px-8 py-4 rounded-full transition-colors">
+						Scroll down
+					</button>
+				</div>
+			</section>
+
+			{/* Experience Section - Ochre Background */}
+			<section className="bg-ochre py-20 px-6">
+				<div className="max-w-6xl mx-auto">
+					<h3 className="font-display text-4xl md:text-6xl font-bold text-deep-black mb-8">
+						Experience
+					</h3>
+					<div className="space-y-6 font-sans">
+						<div className="bg-cream p-6 rounded-lg">
+							<h4 className="font-semibold text-xl text-forest-green mb-2">Senior Designer</h4>
+							<p className="text-text-muted mb-2">2020 - Present</p>
+							<p className="text-text-on-light">Creating beautiful, functional designs with modern tools.</p>
+						</div>
+						<div className="bg-cream p-6 rounded-lg">
+							<h4 className="font-semibold text-xl text-forest-green mb-2">UI/UX Developer</h4>
+							<p className="text-text-muted mb-2">2018 - 2020</p>
+							<p className="text-text-on-light">Bridging the gap between design and development.</p>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			{/* Footer Section - Deep Black Background */}
+			<footer className="bg-deep-black text-text-on-dark py-12 px-6">
+				<div className="max-w-6xl mx-auto">
+					<div className="flex flex-col md:flex-row justify-between items-start md:items-center gap-6">
+						<div>
+							<h4 className="font-display text-2xl font-bold mb-2">Let&apos;s Connect</h4>
+							<p className="font-sans opacity-80">Building the future, one pixel at a time.</p>
+						</div>
+
+						{/* LinkedIn Button - Terracotta */}
+						<button className="bg-terracotta hover:bg-burnt-orange text-text-on-dark font-sans font-semibold px-6 py-3 rounded-lg transition-colors">
+							LinkedIn
+						</button>
+					</div>
+
+					<div className="mt-8 pt-8 border-t border-off-black font-sans text-sm opacity-60">
+						<p>&copy; 2025 Portfolio. Powered by Next.js with Tailwind CSS.</p>
+					</div>
+				</div>
 			</footer>
 		</div>
 	);

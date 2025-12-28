@@ -1,15 +1,20 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
+import { Playfair_Display, Montserrat } from "next/font/google";
 import "./globals.css";
 
-const geistSans = Geist({
-	variable: "--font-geist-sans",
+// Display Serif for headings - elegant, high-contrast modern serif
+const playfairDisplay = Playfair_Display({
+	variable: "--font-display",
 	subsets: ["latin"],
+	weight: ["400", "500", "600", "700", "800", "900"],
+	style: ["normal", "italic"],
 });
 
-const geistMono = Geist_Mono({
-	variable: "--font-geist-mono",
+// Sans-Serif for body text - clean, geometric, highly readable
+const montserrat = Montserrat({
+	variable: "--font-sans",
 	subsets: ["latin"],
+	weight: ["300", "400", "500", "600", "700"],
 });
 
 export const metadata: Metadata = {
@@ -27,7 +32,7 @@ export default function RootLayout({
 			<head>
 				<link rel="icon" href="/favicon.svg" type="image/svg+xml"></link>
 			</head>
-			<body className={`${geistSans.variable} ${geistMono.variable} antialiased`}>{children}</body>
+			<body className={`${playfairDisplay.variable} ${montserrat.variable} antialiased`}>{children}</body>
 		</html>
 	);
 }
