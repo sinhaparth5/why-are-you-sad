@@ -443,7 +443,7 @@ export default function Home() {
 					{/* Bottom bar */}
 					<div className="border-t border-cream/10 pt-8 flex flex-col md:flex-row justify-between items-center gap-4">
 						<p className="font-sans text-sm text-cream/60">
-							&copy; 2025 Why So Sad. Built with Next.js & Tailwind CSS.
+							&copy; 2025 Why So Sad. Built by <a className="hover:underline" href="https://parthsinha.com">Parth Sinha</a>.
 						</p>
 						<div className="flex gap-6">
 							<a href="/privacy" className="font-sans text-sm text-cream/60 hover:text-mustard transition-colors">
