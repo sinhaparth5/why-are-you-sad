@@ -5,7 +5,7 @@ import { useState, useEffect } from "react";
 import Navigation from "@/components/Navigation";
 import Button from "@/components/Button";
 import FadeIn from "@/components/FadeIn";
-import { quizQuestions, getTotalQuestions, type QuizOption } from "@/data/quizData";
+import { quizQuestions, getTotalQuestions } from "@/data/quizData";
 import { ArrowLeft, ArrowRight, CheckCircle } from "lucide-react";
 
 export default function QuizQuestionPage() {

@@ -3,7 +3,7 @@
 import Navigation from "@/components/Navigation";
 import AnimatedSection from "@/components/AnimatedSection";
 import FadeIn from "@/components/FadeIn";
-import { Phone, Globe, MessageCircle, Heart, ExternalLink } from "lucide-react";
+import { Phone, MessageCircle, Heart, ExternalLink } from "lucide-react";
 
 export default function ResourcesPage() {
 	return (

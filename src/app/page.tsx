@@ -7,7 +7,7 @@ import AnimatedSection from "@/components/AnimatedSection";
 import FadeIn from "@/components/FadeIn";
 import Image from "next/image";
 import { motion } from "framer-motion";
-import { Frown, Moon, Cloud, Waves, Star, Link as LinkIcon, MapPin, Mail, Phone, Music, Scissors, Palette, Cat } from "lucide-react";
+import { Frown, Moon, Cloud, Waves, Star } from "lucide-react";
 
 export default function Home() {
 	return (

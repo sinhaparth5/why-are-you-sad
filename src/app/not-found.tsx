@@ -67,7 +67,7 @@ export default function NotFound() {
 
 					<FadeIn delay={0.5}>
 						<p className="font-sans text-lg text-cream/70 leading-relaxed max-w-xl mx-auto mb-12">
-							The page you're looking for doesn't exist, moved, or is currently experiencing an existential crisis.
+							The page you&apos;re looking for doesn&apos;t exist, moved, or is currently experiencing an existential crisis.
 						</p>
 					</FadeIn>
 
@@ -136,7 +136,7 @@ export default function NotFound() {
 					<FadeIn delay={0.8}>
 						<div className="mt-12 bg-forest-green-dark/50 backdrop-blur-sm p-6 rounded-2xl max-w-lg mx-auto">
 							<p className="font-sans text-cream/80 italic">
-								"Not all who wander are lost, but this page definitely is."
+								&quot;Not all who wander are lost, but this page definitely is.&quot;
 							</p>
 						</div>
 					</FadeIn>

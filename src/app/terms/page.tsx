@@ -71,7 +71,7 @@ export default function TermsPage() {
 										<li>• Capable of diagnosing PMDD, SAD, depression, or any medical condition</li>
 									</ul>
 									<p className="pt-2">
-										If you're experiencing mental health challenges, please consult a qualified healthcare provider.
+										If you&apos;re experiencing mental health challenges, please consult a qualified healthcare provider.
 										In crisis? Call <strong>988 (Suicide & Crisis Lifeline)</strong> immediately.
 									</p>
 								</div>
@@ -96,7 +96,7 @@ export default function TermsPage() {
 							</div>
 							<div className="font-sans text-text-on-cream leading-relaxed space-y-3">
 								<p>
-									By accessing and using Why So Sad? (the "Service"), you agree to be bound by these Terms of Service.
+									By accessing and using Why So Sad? (the &quot;Service&quot;), you agree to be bound by these Terms of Service.
 									If you do not agree with any part of these terms, please do not use the Service.
 								</p>
 								<p>
@@ -177,7 +177,7 @@ export default function TermsPage() {
 							</h2>
 							<div className="font-sans text-text-on-cream leading-relaxed space-y-3">
 								<p>
-									<strong>THE SERVICE IS PROVIDED "AS IS" WITHOUT WARRANTIES OF ANY KIND.</strong>
+									<strong>THE SERVICE IS PROVIDED &quot;AS IS&quot; WITHOUT WARRANTIES OF ANY KIND.</strong>
 								</p>
 								<p>
 									We make no warranties that:

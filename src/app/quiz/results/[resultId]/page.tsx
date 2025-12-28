@@ -195,7 +195,7 @@ export default function QuizResultsPage() {
 							.filter((r) => r.percentage >= 30)
 							.map((result, index) => (
 								<AnimatedSection key={result.type} delay={0.1 * index}>
-									<ResultBreakdown type={result.type} percentage={result.percentage} />
+									<ResultBreakdown type={result.type} />
 								</AnimatedSection>
 							))}
 					</div>
@@ -298,7 +298,7 @@ export default function QuizResultsPage() {
 }
 
 // Result breakdown component for each type
-function ResultBreakdown({ type, percentage }: { type: "hormonal" | "seasonal" | "clinical"; percentage: number }) {
+function ResultBreakdown({ type }: { type: "hormonal" | "seasonal" | "clinical" }) {
 	const breakdowns = {
 		hormonal: {
 			title: "Hormonally Tragic (PMDD Pattern)",

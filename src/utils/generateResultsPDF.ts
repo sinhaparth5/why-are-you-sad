@@ -6,15 +6,6 @@ interface ResultType {
 	label: string;
 }
 
-const COLORS = {
-	forestGreen: '#3a4f41',
-	cream: '#f5ead5',
-	mustard: '#f4a93f',
-	terracotta: '#c86640',
-	coral: '#ff6b5a',
-	deepBlack: '#0a0a0a',
-};
-
 export function generateSadnessPDF(results: ResultType[], dominantType: ResultType) {
 	const doc = new jsPDF();
 	const pageWidth = doc.internal.pageSize.getWidth();

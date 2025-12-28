@@ -195,7 +195,7 @@ export default function AnxietyResultsPage() {
 							.filter((r) => r.percentage >= 30)
 							.map((result, index) => (
 								<AnimatedSection key={result.type} delay={0.1 * index}>
-									<AnxietyResultBreakdown type={result.type} percentage={result.percentage} />
+									<AnxietyResultBreakdown type={result.type} />
 								</AnimatedSection>
 							))}
 					</div>
@@ -298,7 +298,7 @@ export default function AnxietyResultsPage() {
 }
 
 // Result breakdown component for each anxiety type
-function AnxietyResultBreakdown({ type, percentage }: { type: "generalized" | "social" | "panic"; percentage: number }) {
+function AnxietyResultBreakdown({ type }: { type: "generalized" | "social" | "panic" }) {
 	const breakdowns = {
 		generalized: {
 			title: "Generalized Worrier (GAD Pattern)",
