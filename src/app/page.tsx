@@ -35,7 +35,7 @@ export default function Home() {
 						<FadeIn delay={0.2}>
 							<div className="space-y-4">
 								<h1 className="font-display text-5xl md:text-7xl lg:text-8xl font-bold leading-tight">
-									Why Are You <span className="text-mustard">Sad</span>?
+									Why So <span className="text-mustard">Sad</span>?
 								</h1>
 								<p className="font-display text-3xl md:text-4xl text-cream/80 italic">
 									A scientifically questionable investigation
@@ -389,7 +389,7 @@ export default function Home() {
 					<div className="grid md:grid-cols-4 gap-8 mb-8">
 						{/* Brand */}
 						<div className="md:col-span-2">
-							<h3 className="font-display text-2xl font-bold mb-4">Why Are You Sad?</h3>
+							<h3 className="font-display text-2xl font-bold mb-4">Why So Sad?</h3>
 							<p className="font-sans text-cream/70 text-sm max-w-md">
 								A scientifically-informed humorous mental health quiz. Not medical advice, just vibes and validation.
 							</p>
@@ -443,11 +443,14 @@ export default function Home() {
 					{/* Bottom bar */}
 					<div className="border-t border-cream/10 pt-8 flex flex-col md:flex-row justify-between items-center gap-4">
 						<p className="font-sans text-sm text-cream/60">
-							&copy; 2025 Why Are You Sad. Built with Next.js & Tailwind CSS.
+							&copy; 2025 Why So Sad. Built with Next.js & Tailwind CSS.
 						</p>
 						<div className="flex gap-6">
 							<a href="/privacy" className="font-sans text-sm text-cream/60 hover:text-mustard transition-colors">
 								Privacy
+							</a>
+							<a href="/terms" className="font-sans text-sm text-cream/60 hover:text-mustard transition-colors">
+								Terms
 							</a>
 							<a href="/disclaimer" className="font-sans text-sm text-cream/60 hover:text-mustard transition-colors">
 								Disclaimer

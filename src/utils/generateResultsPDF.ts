@@ -33,7 +33,7 @@ export function generateSadnessPDF(results: ResultType[], dominantType: ResultTy
 	doc.setTextColor(245, 234, 213); // Cream text
 	doc.setFontSize(26);
 	doc.setFont('times', 'bold');
-	doc.text('Why Are You Sad?', pageWidth / 2, 20, { align: 'center' });
+	doc.text('Why So Sad?', pageWidth / 2, 20, { align: 'center' });
 
 	doc.setFontSize(13);
 	doc.setFont('helvetica', 'normal');

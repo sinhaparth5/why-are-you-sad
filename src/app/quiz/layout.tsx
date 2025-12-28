@@ -1,10 +1,10 @@
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
-	title: "Sadness Quiz | Why Are You Sad?",
+	title: "Sadness Quiz | Why So Sad?",
 	description: "Take our scientifically-informed quiz to find out if your sadness is hormonal (PMDD), seasonal (SAD), or clinical depression. 15 questions, ~5 minutes.",
 	openGraph: {
-		title: "Sadness Quiz | Why Are You Sad?",
+		title: "Sadness Quiz | Why So Sad?",
 		description: "Discover your sadness type: hormonal, seasonal, or clinical. Science-based questions in 5 minutes.",
 		images: [
 			{
@@ -17,7 +17,7 @@ export const metadata: Metadata = {
 	},
 	twitter: {
 		card: "summary_large_image",
-		title: "Sadness Quiz | Why Are You Sad?",
+		title: "Sadness Quiz | Why So Sad?",
 		description: "Discover your sadness type: hormonal, seasonal, or clinical. Science-based questions in 5 minutes.",
 		images: ["/images/Winter Serenity Portrait.png"],
 	},

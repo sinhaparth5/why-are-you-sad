@@ -93,7 +93,7 @@ export default function QuizResultsPage() {
 	};
 
 	const handleShare = () => {
-		const shareText = `I just took the "Why Are You Sad?" quiz! Turns out I'm ${dominantType.percentage}% ${dominantType.label}. Take the quiz: ${window.location.origin}/quiz/start`;
+		const shareText = `I just took the "Why So Sad?" quiz! Turns out I'm ${dominantType.percentage}% ${dominantType.label}. Take the quiz: ${window.location.origin}/quiz/start`;
 		if (navigator.share) {
 			navigator.share({ title: "My Sadness Diagnosis", text: shareText });
 		} else {

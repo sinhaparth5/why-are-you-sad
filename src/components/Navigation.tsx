@@ -15,7 +15,7 @@ export default function Navigation() {
 				<Link href="/" className="flex items-center gap-2 group" onClick={() => setMobileMenuOpen(false)}>
 					<Frown className="w-7 h-7 text-forest-green group-hover:text-mustard transition-colors" />
 					<span className="font-display text-2xl font-bold text-forest-green group-hover:text-mustard transition-colors">
-						Why Are You Sad?
+						Why So Sad?
 					</span>
 				</Link>
 
