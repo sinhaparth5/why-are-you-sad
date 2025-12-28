@@ -1,34 +1,41 @@
 @import "tailwindcss";
 
-/* Retro-Modern Color Palette */
+/* Retro-Modern Color Palette - Based on Han's Portfolio Design */
 :root {
 	/* Forest Green - Primary background for header and sections */
-	--forest-green: #2d4a3a;
-	--forest-green-dark: #243c2f;
-	--forest-green-light: #3a5f4a;
+	--forest-green: #3a4f41;
+	--forest-green-dark: #2d3e33;
+	--forest-green-light: #4a5f51;
 
-	/* Deep Black - Lower background and high-contrast text */
+	/* Deep Black - Contact boxes and high-contrast sections */
 	--deep-black: #0a0a0a;
 	--off-black: #1a1a1a;
 
-	/* Warm Cream/Off-White - Main content background and body text */
-	--cream: #faf8f3;
-	--cream-dark: #f5f0e8;
+	/* Warm Cream/Beige - Main content background */
+	--cream: #f5ead5;
+	--cream-light: #faf6eb;
+	--cream-dark: #ebe0cb;
 	--off-white: #fefdfb;
 
-	/* Mustard Yellow/Ochre - Accents, buttons, decorative elements */
-	--mustard: #d4a574;
-	--mustard-dark: #c89554;
-	--ochre: #ddb566;
+	/* Mustard/Golden Yellow - Buttons, accents, outlined text */
+	--mustard: #f4a93f;
+	--mustard-dark: #e09522;
+	--mustard-light: #f7b961;
+	--golden: #d4a042;
 
-	/* Terracotta/Burnt Orange - Decorative elements and accents */
-	--terracotta: #d35f3a;
-	--burnt-orange: #c86640;
-	--terracotta-light: #e07d5a;
+	/* Terracotta/Orange-Brown - Image overlays and decorative elements */
+	--terracotta: #c86640;
+	--terracotta-dark: #b55935;
+	--burnt-orange: #d87550;
+
+	/* Coral/Salmon - LinkedIn button and accents */
+	--coral: #ff6b5a;
+	--coral-dark: #e85544;
 
 	/* Text colors for optimal contrast */
-	--text-on-dark: #faf8f3;
+	--text-on-dark: #f5ead5;
 	--text-on-light: #1a1a1a;
+	--text-on-cream: #2d3e33;
 	--text-muted: #6b7280;
 }
 
@@ -42,19 +49,25 @@
 	--color-off-black: var(--off-black);
 
 	--color-cream: var(--cream);
+	--color-cream-light: var(--cream-light);
 	--color-cream-dark: var(--cream-dark);
 	--color-off-white: var(--off-white);
 
 	--color-mustard: var(--mustard);
 	--color-mustard-dark: var(--mustard-dark);
-	--color-ochre: var(--ochre);
+	--color-mustard-light: var(--mustard-light);
+	--color-golden: var(--golden);
 
 	--color-terracotta: var(--terracotta);
+	--color-terracotta-dark: var(--terracotta-dark);
 	--color-burnt-orange: var(--burnt-orange);
-	--color-terracotta-light: var(--terracotta-light);
+
+	--color-coral: var(--coral);
+	--color-coral-dark: var(--coral-dark);
 
 	--color-text-on-dark: var(--text-on-dark);
 	--color-text-on-light: var(--text-on-light);
+	--color-text-on-cream: var(--text-on-cream);
 	--color-text-muted: var(--text-muted);
 
 	/* Typography - Font families */
@@ -62,8 +75,52 @@
 	--font-sans: var(--font-sans); /* Montserrat - for body text */
 }
 
+html {
+	scroll-behavior: smooth;
+}
+
 body {
 	background: var(--cream);
-	color: var(--text-on-light);
+	color: var(--text-on-cream);
 	font-family: var(--font-sans), -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+}
+
+/* Outlined/Stroke Text Effect - For decorative PORTFOLIO/RESUME text */
+.text-outline {
+	-webkit-text-stroke: 2px currentColor;
+	-webkit-text-fill-color: transparent;
+	text-stroke: 2px currentColor;
+	paint-order: stroke fill;
+}
+
+.text-outline-thick {
+	-webkit-text-stroke: 3px currentColor;
+	-webkit-text-fill-color: transparent;
+	text-stroke: 3px currentColor;
+	paint-order: stroke fill;
+}
+
+/* Star decorative elements */
+.star-accent {
+	display: inline-block;
+	color: var(--mustard);
+}
+
+/* Red diamond bullet points */
+.diamond-bullet::before {
+	content: "◆";
+	color: #ff4444;
+	margin-right: 0.5rem;
+	font-size: 0.75em;
+}
+
+/* Pill-shaped badge (for skills) */
+.badge-pill {
+	background: var(--deep-black);
+	color: var(--text-on-dark);
+	padding: 0.5rem 1.25rem;
+	border-radius: 9999px;
+	font-size: 0.875rem;
+	font-weight: 500;
+	display: inline-block;
 }
