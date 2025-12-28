@@ -6,8 +6,9 @@ import Navigation from "@/components/Navigation";
 import Button from "@/components/Button";
 import FadeIn from "@/components/FadeIn";
 import AnimatedSection from "@/components/AnimatedSection";
-import { Calendar, Sun, TrendingDown, Heart, ExternalLink, Share2, RotateCcw } from "lucide-react";
+import { Calendar, Sun, TrendingDown, Heart, ExternalLink, Share2, RotateCcw, Download } from "lucide-react";
 import Image from "next/image";
+import { generateSadnessPDF } from "@/utils/generateResultsPDF";
 
 interface ScoreData {
 	hormonal: number;
@@ -92,13 +93,17 @@ export default function QuizResultsPage() {
 	};
 
 	const handleShare = () => {
-		const shareText = `I just took the "Why Are You Sad?" quiz! Turns out I'm ${dominantType.percentage}% ${dominantType.label}. Find out your sadness type: ${window.location.origin}`;
+		const shareText = `I just took the "Why Are You Sad?" quiz! Turns out I'm ${dominantType.percentage}% ${dominantType.label}. Take the quiz: ${window.location.origin}/quiz/start`;
 		if (navigator.share) {
 			navigator.share({ title: "My Sadness Diagnosis", text: shareText });
 		} else {
 			navigator.clipboard.writeText(shareText);
 			alert("Share text copied to clipboard!");
 		}
+	};
+
+	const handleDownloadPDF = () => {
+		generateSadnessPDF(results, dominantType);
 	};
 
 	return (
@@ -272,9 +277,13 @@ export default function QuizResultsPage() {
 							Share your results (without the details) to help others feel less alone.
 						</p>
 						<div className="flex flex-col sm:flex-row gap-4 justify-center">
-							<Button onClick={handleShare} variant="forest" size="lg">
+							<Button onClick={handleDownloadPDF} variant="forest" size="lg">
+								<Download className="w-5 h-5" />
+								Download PDF
+							</Button>
+							<Button onClick={handleShare} variant="terracotta" size="lg">
 								<Share2 className="w-5 h-5" />
-								Share Your Results
+								Share Results
 							</Button>
 							<Button onClick={handleRetake} variant="outline" size="lg">
 								<RotateCcw className="w-5 h-5" />

@@ -36,7 +36,7 @@ export default function Button({
 		coral: "bg-coral text-white shadow-lg",
 		terracotta: "bg-terracotta text-text-on-dark shadow-lg",
 		forest: "bg-forest-green text-text-on-dark shadow-lg",
-		outline: "border-2 border-mustard text-mustard shadow-md",
+		outline: "bg-white border-2 border-deep-black text-deep-black shadow-md",
 	};
 
 	const hoverVariants = {
@@ -44,7 +44,7 @@ export default function Button({
 		coral: { backgroundColor: "#e85544", scale: 1.05, boxShadow: "0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1)" },
 		terracotta: { backgroundColor: "#b55935", scale: 1.05, boxShadow: "0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1)" },
 		forest: { backgroundColor: "#2d3e33", scale: 1.05, boxShadow: "0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1)" },
-		outline: { backgroundColor: "#f4a93f", color: "#0a0a0a", scale: 1.05, boxShadow: "0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1)" },
+		outline: { backgroundColor: "#0a0a0a", color: "#ffffff", scale: 1.05, boxShadow: "0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1)" },
 	};
 
 	const combinedStyles = `${baseStyles} ${sizeStyles[size]} ${variantStyles[variant]} ${className}`;

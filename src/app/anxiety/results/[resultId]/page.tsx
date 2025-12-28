@@ -6,8 +6,9 @@ import Navigation from "@/components/Navigation";
 import Button from "@/components/Button";
 import FadeIn from "@/components/FadeIn";
 import AnimatedSection from "@/components/AnimatedSection";
-import { Brain, Users, Zap, Heart, ExternalLink, Share2, RotateCcw } from "lucide-react";
+import { Brain, Users, Zap, Heart, ExternalLink, Share2, RotateCcw, Download } from "lucide-react";
 import Image from "next/image";
+import { generateAnxietyPDF } from "@/utils/generateResultsPDF";
 
 interface AnxietyScoreData {
 	generalized: number;
@@ -92,13 +93,17 @@ export default function AnxietyResultsPage() {
 	};
 
 	const handleShare = () => {
-		const shareText = `I just took the anxiety quiz! Turns out I'm ${dominantType.percentage}% ${dominantType.label}. Find out your anxiety type: ${window.location.origin}/anxiety/start`;
+		const shareText = `I just took the anxiety quiz! Turns out I'm ${dominantType.percentage}% ${dominantType.label}. Take the quiz: ${window.location.origin}/anxiety/start`;
 		if (navigator.share) {
 			navigator.share({ title: "My Anxiety Type", text: shareText });
 		} else {
 			navigator.clipboard.writeText(shareText);
 			alert("Share text copied to clipboard!");
 		}
+	};
+
+	const handleDownloadPDF = () => {
+		generateAnxietyPDF(results, dominantType);
 	};
 
 	return (
@@ -272,9 +277,13 @@ export default function AnxietyResultsPage() {
 							Help normalize conversations about anxiety.
 						</p>
 						<div className="flex flex-col sm:flex-row gap-4 justify-center">
-							<Button onClick={handleShare} variant="forest" size="lg">
+							<Button onClick={handleDownloadPDF} variant="forest" size="lg">
+								<Download className="w-5 h-5" />
+								Download PDF
+							</Button>
+							<Button onClick={handleShare} variant="coral" size="lg">
 								<Share2 className="w-5 h-5" />
-								Share Your Results
+								Share Results
 							</Button>
 							<Button onClick={handleRetake} variant="outline" size="lg">
 								<RotateCcw className="w-5 h-5" />

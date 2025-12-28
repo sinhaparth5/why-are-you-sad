@@ -57,6 +57,8 @@ export default function RootLayout({
 		<html lang="en" data-scroll-behavior="smooth">
 			<head>
 				<link rel="icon" href="/favicon.svg" type="image/svg+xml"></link>
+				<link rel="manifest" href="/manifest.json"></link>
+				<meta name="theme-color" content="#3a4f41"></meta>
 			</head>
 			<body className={`${playfairDisplay.variable} ${montserrat.variable} antialiased`}>{children}</body>
 		</html>
