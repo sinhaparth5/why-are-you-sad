@@ -29,21 +29,21 @@ export function generateSadnessPDF(results: ResultType[], dominantType: ResultTy
 	doc.setFillColor(58, 79, 65); // Forest green
 	doc.rect(0, 0, pageWidth, 40, 'F');
 
-	// Title
+	// Title - Using serif font for display (like Playfair Display)
 	doc.setTextColor(245, 234, 213); // Cream text
-	doc.setFontSize(24);
-	doc.setFont('helvetica', 'bold');
+	doc.setFontSize(26);
+	doc.setFont('times', 'bold');
 	doc.text('Why Are You Sad?', pageWidth / 2, 20, { align: 'center' });
 
-	doc.setFontSize(14);
+	doc.setFontSize(13);
 	doc.setFont('helvetica', 'normal');
 	doc.text('Your Sadness Quiz Results', pageWidth / 2, 30, { align: 'center' });
 
-	// Main result
+	// Main result - Serif font for emphasis
 	yPosition = 60;
 	doc.setTextColor(10, 10, 10); // Deep black
-	doc.setFontSize(20);
-	doc.setFont('helvetica', 'bold');
+	doc.setFontSize(22);
+	doc.setFont('times', 'bold');
 	doc.text(`You're ${dominantType.percentage}% ${dominantType.label}`, pageWidth / 2, yPosition, { align: 'center' });
 
 	// Date
@@ -60,16 +60,16 @@ export function generateSadnessPDF(results: ResultType[], dominantType: ResultTy
 
 	// Results breakdown
 	yPosition += 20;
-	doc.setFontSize(16);
-	doc.setFont('helvetica', 'bold');
+	doc.setFontSize(18);
+	doc.setFont('times', 'bold');
 	doc.setTextColor(58, 79, 65); // Forest green
 	doc.text('Your Sadness Breakdown', 20, yPosition);
 
 	yPosition += 10;
 	results.forEach((result) => {
-		// Type label
-		doc.setFontSize(12);
-		doc.setFont('helvetica', 'bold');
+		// Type label - Serif for emphasis
+		doc.setFontSize(13);
+		doc.setFont('times', 'bold');
 		doc.setTextColor(10, 10, 10);
 		doc.text(result.label, 20, yPosition);
 
@@ -102,8 +102,8 @@ export function generateSadnessPDF(results: ResultType[], dominantType: ResultTy
 
 	// Important note
 	yPosition += 10;
-	doc.setFontSize(10);
-	doc.setFont('helvetica', 'bold');
+	doc.setFontSize(11);
+	doc.setFont('times', 'bold');
 	doc.setTextColor(200, 102, 64); // Terracotta
 	doc.text('Important Disclaimer:', 20, yPosition);
 
@@ -138,21 +138,21 @@ export function generateAnxietyPDF(results: ResultType[], dominantType: ResultTy
 	doc.setFillColor(255, 107, 90); // Coral
 	doc.rect(0, 0, pageWidth, 40, 'F');
 
-	// Title
+	// Title - Using serif font for display (like Playfair Display)
 	doc.setTextColor(255, 255, 255); // White text
-	doc.setFontSize(24);
-	doc.setFont('helvetica', 'bold');
+	doc.setFontSize(26);
+	doc.setFont('times', 'bold');
 	doc.text('Anxiety Quiz Results', pageWidth / 2, 20, { align: 'center' });
 
-	doc.setFontSize(14);
+	doc.setFontSize(13);
 	doc.setFont('helvetica', 'normal');
 	doc.text('What Kind of Anxious Are You?', pageWidth / 2, 30, { align: 'center' });
 
-	// Main result
+	// Main result - Serif font for emphasis
 	yPosition = 60;
 	doc.setTextColor(10, 10, 10); // Deep black
-	doc.setFontSize(20);
-	doc.setFont('helvetica', 'bold');
+	doc.setFontSize(22);
+	doc.setFont('times', 'bold');
 	doc.text(`You're ${dominantType.percentage}% ${dominantType.label}`, pageWidth / 2, yPosition, { align: 'center' });
 
 	// Date
@@ -169,16 +169,16 @@ export function generateAnxietyPDF(results: ResultType[], dominantType: ResultTy
 
 	// Results breakdown
 	yPosition += 20;
-	doc.setFontSize(16);
-	doc.setFont('helvetica', 'bold');
+	doc.setFontSize(18);
+	doc.setFont('times', 'bold');
 	doc.setTextColor(255, 107, 90); // Coral
 	doc.text('Your Anxiety Profile', 20, yPosition);
 
 	yPosition += 10;
 	results.forEach((result) => {
-		// Type label
-		doc.setFontSize(12);
-		doc.setFont('helvetica', 'bold');
+		// Type label - Serif for emphasis
+		doc.setFontSize(13);
+		doc.setFont('times', 'bold');
 		doc.setTextColor(10, 10, 10);
 		doc.text(result.label, 20, yPosition);
 
@@ -211,8 +211,8 @@ export function generateAnxietyPDF(results: ResultType[], dominantType: ResultTy
 
 	// Important note
 	yPosition += 10;
-	doc.setFontSize(10);
-	doc.setFont('helvetica', 'bold');
+	doc.setFontSize(11);
+	doc.setFont('times', 'bold');
 	doc.setTextColor(200, 102, 64); // Terracotta
 	doc.text('Important Disclaimer:', 20, yPosition);
 
