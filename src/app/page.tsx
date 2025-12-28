@@ -17,7 +17,7 @@ export default function Home() {
 			{/* Hero Section - Forest Green Background with decorative elements */}
 			<section className="relative bg-forest-green text-text-on-dark min-h-screen flex items-center overflow-hidden pt-20">
 				{/* Decorative outlined text in background */}
-				<div className="absolute inset-0 flex items-center justify-center pointer-events-none opacity-5">
+				<div className="absolute inset-0 flex items-center justify-center pointer-events-none opacity-15">
 					<div className="font-display text-[8rem] md:text-[15rem] lg:text-[20rem] font-bold text-outline-thick text-mustard leading-none whitespace-nowrap">
 						WHY
 					</div>
@@ -67,7 +67,7 @@ export default function Home() {
 						{/* Small disclaimer */}
 						<FadeIn delay={0.8}>
 							<p className="font-sans text-xs text-cream/60 max-w-md">
-								⚠️ This is parody. Not medical advice. If you&apos;re genuinely struggling, please see{" "}
+								⚠️ This is for entertainment. Not medical advice. If you&apos;re genuinely struggling, please see{" "}
 								<a href="/resources" className="underline hover:text-mustard transition-colors">
 									real resources
 								</a>
@@ -203,7 +203,7 @@ export default function Home() {
 			{/* How It Works - Mustard accent section */}
 			<section className="bg-forest-green py-20 px-6 relative overflow-hidden">
 				{/* Background decorative image */}
-				<div className="absolute right-0 top-0 w-96 h-96 opacity-5">
+				<div className="absolute right-0 top-0 w-96 h-96 opacity-15">
 					<Image
 						src="/images/Somber Outdoor Portrait.png"
 						alt=""
@@ -214,7 +214,7 @@ export default function Home() {
 				</div>
 
 				{/* Background decorative text */}
-				<div className="absolute left-0 top-1/2 -translate-y-1/2 pointer-events-none opacity-5">
+				<div className="absolute left-0 top-1/2 -translate-y-1/2 pointer-events-none opacity-15">
 					<div className="font-display text-[10rem] md:text-[15rem] font-bold text-outline-thick text-mustard leading-none whitespace-nowrap">
 						QUIZ
 					</div>
@@ -274,10 +274,10 @@ export default function Home() {
 				</div>
 			</section>
 
-			{/* Testimonials/Social Proof (Parody) - Cream */}
+			{/* Testimonials/Social Proof (Humor) - Cream */}
 			<section className="bg-cream py-20 px-6 relative overflow-hidden">
 				{/* Background decorative images */}
-				<div className="absolute top-0 left-0 w-64 h-64 opacity-5">
+				<div className="absolute top-0 left-0 w-64 h-64 opacity-15">
 					<Image
 						src="/images/Contemplative Red Light.png"
 						alt=""
@@ -286,7 +286,7 @@ export default function Home() {
 						sizes="256px"
 					/>
 				</div>
-				<div className="absolute bottom-0 right-0 w-64 h-64 opacity-5">
+				<div className="absolute bottom-0 right-0 w-64 h-64 opacity-15">
 					<Image
 						src="/images/Winter Serenity Portrait.png"
 						alt=""
@@ -303,7 +303,7 @@ export default function Home() {
 
 					<div className="grid md:grid-cols-3 gap-8">
 						{/* Testimonial 1 */}
-						<div className="bg-white p-6 rounded-xl shadow-md">
+						<div className="bg-white p-6 rounded-xl shadow-md h-full">
 							<div className="flex gap-1 mb-4">
 								<Star className="w-5 h-5 text-mustard fill-mustard" />
 								<Star className="w-5 h-5 text-mustard fill-mustard" />
@@ -318,7 +318,7 @@ export default function Home() {
 						</div>
 
 						{/* Testimonial 2 */}
-						<div className="bg-white p-6 rounded-xl shadow-md">
+						<div className="bg-white p-6 rounded-xl shadow-md h-full">
 							<div className="flex gap-1 mb-4">
 								<Star className="w-5 h-5 text-mustard fill-mustard" />
 								<Star className="w-5 h-5 text-mustard fill-mustard" />
@@ -333,7 +333,7 @@ export default function Home() {
 						</div>
 
 						{/* Testimonial 3 */}
-						<div className="bg-white p-6 rounded-xl shadow-md">
+						<div className="bg-white p-6 rounded-xl shadow-md h-full">
 							<div className="flex gap-1 mb-4">
 								<Star className="w-5 h-5 text-mustard fill-mustard" />
 								<Star className="w-5 h-5 text-mustard fill-mustard" />
@@ -376,7 +376,7 @@ export default function Home() {
 						<Button href="/quiz/start" variant="mustard" size="lg">
 							Take the Sadness Quiz
 						</Button>
-						<Button href="/anxiety" variant="coral" size="lg">
+						<Button href="/anxiety/start" variant="coral" size="lg">
 							Or try the Anxiety Quiz
 						</Button>
 					</div>
@@ -391,7 +391,7 @@ export default function Home() {
 						<div className="md:col-span-2">
 							<h3 className="font-display text-2xl font-bold mb-4">Why Are You Sad?</h3>
 							<p className="font-sans text-cream/70 text-sm max-w-md">
-								A scientifically-informed parody mental health quiz. Not medical advice, just vibes and validation.
+								A scientifically-informed humorous mental health quiz. Not medical advice, just vibes and validation.
 							</p>
 						</div>
 
@@ -432,7 +432,7 @@ export default function Home() {
 									</a>
 								</li>
 								<li>
-									<a href="/anxiety" className="text-cream/70 hover:text-mustard transition-colors">
+									<a href="/anxiety/start" className="text-cream/70 hover:text-mustard transition-colors">
 										Anxiety Quiz
 									</a>
 								</li>

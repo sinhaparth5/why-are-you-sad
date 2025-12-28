@@ -192,7 +192,7 @@ export default function HowItWorksPage() {
 
 					<div className="grid md:grid-cols-2 gap-8">
 						<AnimatedSection delay={0.1}>
-							<div className="bg-white p-8 rounded-2xl shadow-md">
+							<div className="bg-white p-8 rounded-2xl shadow-md h-full">
 								<Brain className="w-12 h-12 text-mustard mb-4" />
 								<h3 className="font-display text-2xl font-bold text-forest-green mb-4">Your Diagnosis</h3>
 								<p className="font-sans text-text-on-cream leading-relaxed">
@@ -203,7 +203,7 @@ export default function HowItWorksPage() {
 						</AnimatedSection>
 
 						<AnimatedSection delay={0.2}>
-							<div className="bg-white p-8 rounded-2xl shadow-md">
+							<div className="bg-white p-8 rounded-2xl shadow-md h-full">
 								<CheckCircle2 className="w-12 h-12 text-forest-green mb-4" />
 								<h3 className="font-display text-2xl font-bold text-forest-green mb-4">Survival Kit</h3>
 								<p className="font-sans text-text-on-cream leading-relaxed">
@@ -214,7 +214,7 @@ export default function HowItWorksPage() {
 						</AnimatedSection>
 
 						<AnimatedSection delay={0.3}>
-							<div className="bg-white p-8 rounded-2xl shadow-md">
+							<div className="bg-white p-8 rounded-2xl shadow-md h-full">
 								<Sun className="w-12 h-12 text-coral mb-4" />
 								<h3 className="font-display text-2xl font-bold text-forest-green mb-4">Treatment Hints</h3>
 								<p className="font-sans text-text-on-cream leading-relaxed">
@@ -225,7 +225,7 @@ export default function HowItWorksPage() {
 						</AnimatedSection>
 
 						<AnimatedSection delay={0.4}>
-							<div className="bg-white p-8 rounded-2xl shadow-md">
+							<div className="bg-white p-8 rounded-2xl shadow-md h-full">
 								<TrendingDown className="w-12 h-12 text-terracotta mb-4" />
 								<h3 className="font-display text-2xl font-bold text-forest-green mb-4">Shareable Results</h3>
 								<p className="font-sans text-text-on-cream leading-relaxed">

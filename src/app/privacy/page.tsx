@@ -200,7 +200,7 @@ export default function PrivacyPage() {
 				<div className="max-w-4xl mx-auto text-center">
 					<AnimatedSection>
 						<p className="font-sans text-cream/80">
-							<strong>Bottom line:</strong> We respect your privacy. This is a parody mental health quiz, not a data
+							<strong>Bottom line:</strong> We respect your privacy. This is a humorous mental health quiz, not a data
 							harvesting operation.
 						</p>
 					</AnimatedSection>

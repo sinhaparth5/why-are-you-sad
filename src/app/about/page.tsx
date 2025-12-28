@@ -15,7 +15,7 @@ export default function AboutPage() {
 			{/* Hero Section */}
 			<section className="relative bg-forest-green text-text-on-dark pt-32 pb-20 px-6 overflow-hidden">
 				{/* Background image */}
-				<div className="absolute inset-0 opacity-10">
+				<div className="absolute inset-0 opacity-20">
 					<Image
 						src="/images/Elegance in Himalayan Blossom.png"
 						alt=""
@@ -91,7 +91,7 @@ export default function AboutPage() {
 
 					<div className="grid md:grid-cols-2 gap-8">
 						<AnimatedSection delay={0.1}>
-							<div className="bg-forest-green p-8 rounded-2xl">
+							<div className="bg-forest-green p-8 rounded-2xl h-full">
 								<Lightbulb className="w-12 h-12 text-mustard mb-4" />
 								<h3 className="font-display text-2xl font-bold mb-4">Actually Scientific</h3>
 								<p className="font-sans text-cream/80 leading-relaxed">
@@ -102,7 +102,7 @@ export default function AboutPage() {
 						</AnimatedSection>
 
 						<AnimatedSection delay={0.2}>
-							<div className="bg-forest-green p-8 rounded-2xl">
+							<div className="bg-forest-green p-8 rounded-2xl h-full">
 								<Heart className="w-12 h-12 text-coral mb-4" />
 								<h3 className="font-display text-2xl font-bold mb-4">Genuinely Helpful</h3>
 								<p className="font-sans text-cream/80 leading-relaxed">
@@ -113,7 +113,7 @@ export default function AboutPage() {
 						</AnimatedSection>
 
 						<AnimatedSection delay={0.3}>
-							<div className="bg-forest-green p-8 rounded-2xl">
+							<div className="bg-forest-green p-8 rounded-2xl h-full">
 								<Sparkles className="w-12 h-12 text-mustard mb-4" />
 								<h3 className="font-display text-2xl font-bold mb-4">Actually Funny</h3>
 								<p className="font-sans text-cream/80 leading-relaxed">
@@ -124,11 +124,11 @@ export default function AboutPage() {
 						</AnimatedSection>
 
 						<AnimatedSection delay={0.4}>
-							<div className="bg-forest-green p-8 rounded-2xl">
+							<div className="bg-forest-green p-8 rounded-2xl h-full">
 								<AlertCircle className="w-12 h-12 text-coral mb-4" />
 								<h3 className="font-display text-2xl font-bold mb-4">Brutally Honest</h3>
 								<p className="font-sans text-cream/80 leading-relaxed">
-									We&apos;ll tell you if your results suggest you need professional help. This is parody, but
+									We&apos;ll tell you if your results suggest you need professional help. This is for entertainment, but
 									we&apos;re not joking about mental health.
 								</p>
 							</div>
@@ -145,7 +145,7 @@ export default function AboutPage() {
 							<h2 className="font-display text-4xl font-bold text-mustard mb-6">Important Disclaimer</h2>
 							<div className="space-y-4 font-sans text-cream/90 leading-relaxed">
 								<p className="text-lg">
-									<strong>This is a parody website.</strong> While our questions are based on real scientific markers,
+									<strong>This is a lighthearted website.</strong> While our questions are based on real scientific markers,
 									this quiz is NOT a medical diagnosis and should NOT replace professional mental health care.
 								</p>
 								<p>

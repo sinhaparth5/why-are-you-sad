@@ -20,19 +20,31 @@ const montserrat = Montserrat({
 export const metadata: Metadata = {
 	title: "Why Are You Sad? | Scientifically Questionable Sadness Quiz",
 	description:
-		"Is it hormones? Seasonal? Or genuinely, historically sad? Take our parody mental health quiz to diagnose your sadness with dramatic precision. PMDD, SAD, or clinical depression – let's find out!",
-	keywords: ["mental health quiz", "sadness quiz", "PMDD", "SAD", "seasonal depression", "parody quiz", "hormonal sadness"],
+		"Is it hormones? Seasonal? Or genuinely, historically sad? Take our humorous mental health quiz to diagnose your sadness with dramatic precision. PMDD, SAD, or clinical depression – let's find out!",
+	keywords: ["mental health quiz", "sadness quiz", "PMDD", "SAD", "seasonal depression", "humorous quiz", "hormonal sadness"],
 	authors: [{ name: "Why Are You Sad" }],
+	metadataBase: new URL('https://whyareyousad.com'),
 	openGraph: {
 		title: "Why Are You Sad? | Sadness Diagnosis Quiz",
-		description: "Find out if your sadness is hormonal, seasonal, or genuinely persistent. A scientifically-informed parody.",
+		description: "Find out if your sadness is hormonal, seasonal, or genuinely persistent. A scientifically-informed humorous quiz.",
 		type: "website",
 		locale: "en_US",
+		url: "https://whyareyousad.com",
+		siteName: "Why Are You Sad?",
+		images: [
+			{
+				url: "/images/Somber Outdoor Portrait.png",
+				width: 1200,
+				height: 630,
+				alt: "Why Are You Sad? Mental Health Quiz",
+			},
+		],
 	},
 	twitter: {
 		card: "summary_large_image",
 		title: "Why Are You Sad? | Take the Quiz",
 		description: "Is it hormones? Seasonal? Or are you just genuinely sad? Find out now!",
+		images: ["/images/Somber Outdoor Portrait.png"],
 	},
 };
 
