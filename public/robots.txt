@@ -1,0 +1,9 @@
+# *
+User-agent: *
+Allow: /
+
+# Host
+Host: https://why-are-you-sad.parth-sinha.workers.dev
+
+# Sitemaps
+Sitemap: https://why-are-you-sad.parth-sinha.workers.dev/sitemap.xml

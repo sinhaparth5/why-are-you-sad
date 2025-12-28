@@ -1,0 +1,24 @@
+{
+  "name": "Why Are You Sad?",
+  "short_name": "Why Sad?",
+  "description": "Scientifically-informed humorous mental health quiz to diagnose your sadness type",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#f5ead5",
+  "theme_color": "#3a4f41",
+  "orientation": "portrait",
+  "icons": [
+    {
+      "src": "/favicon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    }
+  ],
+  "categories": [
+    "health",
+    "lifestyle",
+    "utilities"
+  ],
+  "screenshots": []
+}
